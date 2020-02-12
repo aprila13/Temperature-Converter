@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="main.css">
+  
+</head>
+<body>
+  
+  <div class="container FtoC">
+    <h1>Temperature Converter</h1>
+    <p class="temptell">Fahrenheit to Celsius</p>
+      <div class="row">
+        <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button type="button">Fahrenheit</button>
+                </div>
+                <input type="number" class="form-control" aria-label="Text input with segmented dropdown button" id="ftocinput">
+                <button type="button" class="btn btn-outline-secondary" id="ftocsubmit">Submit</button>
+              </div>
+              
+        </div>
+
+        <span>=</span>
+
+        <div class="col">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button type="button" class="">Celsius</button>
+                </div>
+                <input type="number" class="form-control" aria-label="Text input with segmented dropdown button" id="ftocDisplay" disabled>
+              </div>
+        </div>
+      </div>
+      <p class="message"></p>
+      <h6>Or try the Celsius to Fahrenheit Converter <a href="" id="goToCtoF">here</a></h6>
+  </div>
+
+
+   <!--  -->
+
+   <div class="container CtoF">
+      <h1>Temperature Converter</h1>
+      <p class="temptell">Celsius to Fahrenheit<p>
+        <div class="row">
+          <div class="col">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button type="button" class="temp-type">Celsius</button>
+                  </div>
+                  <input type="number" class="form-control celsiusInput" aria-label="Text input with segmented dropdown button" id="input">
+                  <button type="button" class="btn btn-outline-secondary" id="celsubmit">Submit</button>
+                </div>
+          </div> 
+  
+          <span>=</span>
+  
+          <div class="col">
+              <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <button type="button" class="">Fahrenheit</button>
+                  </div>
+                  <input type="number" class="form-control" aria-label="Text input with segmented dropdown button" id="fahrenheitDisplay" disabled>
+                </div>
+            </div>
+          </div> 
+      
+        <p class="celmessage"></p>
+        <h6>Or try the Fahrenheit to Celsius Converter <a href="" id="goToFtoC">here</a></h6>
+    </div>
+  
+    <footer>&copy; 2010<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, April Craig | Web Developer</footer>
+    
+  <script src="app.js"></script>
+</body>
+</html>
